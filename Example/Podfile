@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PushChamp_Example' do
+  pod 'PushChamp', :path => '../'
+
+  target 'PushChamp_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
