@@ -1,0 +1,16 @@
+PODS:
+  - PushChamp (0.1.0)
+
+DEPENDENCIES:
+  - PushChamp (from `../`)
+
+EXTERNAL SOURCES:
+  PushChamp:
+    :path: ../
+
+SPEC CHECKSUMS:
+  PushChamp: 29afa708a8be11b506520fdf495c7dd77bc5ece7
+
+PODFILE CHECKSUM: c2dcb692656e3f8bada31807af9f5bea4b96ea1a
+
+COCOAPODS: 1.1.1

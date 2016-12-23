@@ -1,0 +1,6 @@
+framework module PushChamp {
+  umbrella header "PushChamp-umbrella.h"
+
+  export *
+  module * { export * }
+}
