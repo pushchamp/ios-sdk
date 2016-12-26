@@ -36,9 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20B23FCE3E37792B2CB57D37 /* PushChamp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PushChamp.podspec; path = ../PushChamp.podspec; sourceTree = "<group>"; };
+		20B23FCE3E37792B2CB57D37 /* PushChamp.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PushChamp.podspec; path = ../PushChamp.podspec; sourceTree = "<group>"; };
 		3156922E871448CF78F2BFEB /* Pods_PushChamp_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushChamp_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BDA9CF56449B4CF2F965420 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5BDA9CF56449B4CF2F965420 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* PushChamp_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushChamp_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +62,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9AAE38DD04CBE378AEF8EC47 /* Pods_PushChamp_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushChamp_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D7F8F547265889627D6EB7 /* Pods-PushChamp_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushChamp_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PushChamp_Tests/Pods-PushChamp_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BB1BE7A13A9C81F9F189A879 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BB1BE7A13A9C81F9F189A879 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D9C1F4ABF50C251447A816DC /* Pods-PushChamp_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushChamp_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushChamp_Tests/Pods-PushChamp_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF6BC376B4900DEED58581EF /* Pods-PushChamp_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushChamp_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PushChamp_Example/Pods-PushChamp_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -247,6 +247,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Nithin M Das";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 2QP4AFAPRP;
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -513,6 +517,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2QP4AFAPRP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushChamp/PushChamp-Prefix.pch";
 				INFOPLIST_FILE = "PushChamp/PushChamp-Info.plist";
@@ -529,6 +535,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2QP4AFAPRP;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PushChamp/PushChamp-Prefix.pch";
 				INFOPLIST_FILE = "PushChamp/PushChamp-Info.plist";
