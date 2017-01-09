@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		000845871E0D5331005972D3 /* Pushchamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 000845851E0D5331005972D3 /* Pushchamp.m */; };
 		000845881E0D5331005972D3 /* Pushchamp.h in Headers */ = {isa = PBXBuildFile; fileRef = 000845861E0D5331005972D3 /* Pushchamp.h */; };
+		0068F64D1E23942900C74891 /* UIViewController+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0068F64B1E23942900C74891 /* UIViewController+Utils.h */; };
+		0068F64E1E23942A00C74891 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0068F64C1E23942900C74891 /* UIViewController+Utils.m */; };
 		11F543C7A6D4AEE239B407686AC13CEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		1DBBBB6213BA5C3E43DC3234F3F173E3 /* Pods-PushChamp_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D32C282E22C5195AF7F3DDD2CC943F /* Pods-PushChamp_Example-dummy.m */; };
 		36E544B02B73C16155133C20D838F358 /* PushChamp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5552F3E121A8F38AB016C63E7153DA9 /* PushChamp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		000845851E0D5331005972D3 /* Pushchamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pushchamp.m; sourceTree = "<group>"; };
 		000845861E0D5331005972D3 /* Pushchamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pushchamp.h; sourceTree = "<group>"; };
+		0068F64B1E23942900C74891 /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		0068F64C1E23942900C74891 /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
 		1706C636B00F7410B6C4A425370CCAEC /* PushChamp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PushChamp.modulemap; sourceTree = "<group>"; };
 		197827A9D4B2EA44BA73057EA32356BA /* Pods-PushChamp_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushChamp_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		244483776B309AC77128F873E7B7D55B /* Pods-PushChamp_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushChamp_Example-resources.sh"; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 			children = (
 				000845851E0D5331005972D3 /* Pushchamp.m */,
 				000845861E0D5331005972D3 /* Pushchamp.h */,
+				0068F64B1E23942900C74891 /* UIViewController+Utils.h */,
+				0068F64C1E23942900C74891 /* UIViewController+Utils.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0068F64D1E23942900C74891 /* UIViewController+Utils.h in Headers */,
 				000845881E0D5331005972D3 /* Pushchamp.h in Headers */,
 				81F79294EB4E2E93026DEA86C1F46701 /* Pods-PushChamp_Example-umbrella.h in Headers */,
 			);
@@ -350,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DBBBB6213BA5C3E43DC3234F3F173E3 /* Pods-PushChamp_Example-dummy.m in Sources */,
+				0068F64E1E23942A00C74891 /* UIViewController+Utils.m in Sources */,
 				000845871E0D5331005972D3 /* Pushchamp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
