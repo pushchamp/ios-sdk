@@ -18,13 +18,13 @@
 }
 
 
-@property (nonatomic, strong) NSString *tfs;
+
 @property (nonatomic, strong) NSTimer *timer;
 @property (atomic) BOOL flushOnBackground;
 @property (nonatomic, strong) NSMutableArray *eventsQueue;
 @property (nonatomic) dispatch_queue_t serialQueue;
 
-- (NSString *)eventsFilePath;
+
 
 -(id) init: (NSString*)salt;
 -(void) register:(NSString*)token;
@@ -33,17 +33,24 @@
 -(void) deleteTag:(NSString*)key;
 -(void) addGroups:(NSArray*)groups;
 -(void) deleteGroups:(NSArray*)groups;
--(void) makeCall:(NSString*)token
-        subscription_id:(NSString *)deviceId
+//-(void) makeCall:(NSString*)token
+// subscription_id:(NSString *)deviceId
+//        add_tags:(NSDictionary *)add_tags
+//     delete_tags:(NSDictionary *)delete_tags;
+-(void) makeCall:(NSString *)app_id
+           token: (NSString *)token
+ subscription_id:(NSString *)subscription_id
         add_tags:(NSDictionary *)add_tags
-        delete_tags:(NSDictionary *)delete_tags;
+     delete_tags:(NSArray *)delete_tags
+      add_groups:(NSArray *)add_groups
+   delete_groups:(NSArray *)delete_groups;
 
 
 -(void) sendEvent:(NSString *)app
                ev:(NSString *)ev
                et:(NSArray *)et;
 
--(void) sendEvents:(NSArray *)event;
+
 
 - (void)track;
 - (void)track:(NSString *)event properties:(nullable NSDictionary *)properties;

@@ -195,7 +195,7 @@ BOOL lastOnFocusWasToBackground = YES;
     }
 }
 
--(void) makeCall:(NSString *)app
+-(void) makeCall:(NSString *)app_id
            token: (NSString *)token
  subscription_id:(NSString *)subscription_id
         add_tags:(NSDictionary *)add_tags
@@ -209,7 +209,7 @@ BOOL lastOnFocusWasToBackground = YES;
     NSMutableString* requestBody = [[NSMutableString alloc] init];
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
-    [params setObject:app forKey:@"app"];
+    [params setObject:app_id forKey:@"app"];
     if (add_tags!=nil) {
         NSError * err;
         NSData * jsonData = [NSJSONSerialization  dataWithJSONObject:add_tags options:0 error:&err];
@@ -649,7 +649,6 @@ BOOL lastOnFocusWasToBackground = YES;
 - (void)applicationDidBecomeActive:(NSNotification *)notification
 {
     NSLog(@"%@ application did become active", self);
-    _tfs = @"0";
     [self startTimer];
     
     
